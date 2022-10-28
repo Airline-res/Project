@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&family=Varela+Round&display=swap');
+body{
+    background-color: rgb(38, 129, 172);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: aquamarine;
+    color: blue;
+}
+nav ul li{
+    padding: 0 12px;
+
+}
+
+.brand img{
+    width: 55px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.home_slider{
+    align-items: center;
+    margin: auto;
+    width: 800px;
+    height: 300px;
+    background-image: url(img1.jpg);
+    background-size: 100% 100%;
+    animation: changeImage 30s linear infinite;  
+    
+}
+
+@keyframes changeImage {
+    0%{
+        background-image: url(img1.jpg);
+    }
+    25%{
+        background-image: url(img2.jpg);
+    }50%{
+        background-image: url(img3.jpg);
+    }75%{
+        background-image: url(img4.jpg);
+    }100%{
+        background-image: url(img5.jpg);
+    }
+}
+
+.booking-form-box{
+     max-width: 375px;
+     margin-left: 600px;
+     border: 1px solid #ced4da;
+}
+
+.radio-btn{
+    margin: 0 20px;
+}
+
+.radio-btn .btn{
+    margin: 20px 10px 20px 0;
+    box-shadow: none;
+
+}
+.radio-btn .btn::after{
+    content: '';
+    height: 15px;
+    width: 15px;
+    top: -2px;
+    left: -1;
+    background-color: rgb(246, 248, 248);
+    position: relative;
+    display: inline-block;
+    border: 3px solid #fff;
+    visibility: visible;
+    border-radius: 50%;
+}
+
+.radio-btn .btn:checked::after{
+    content: '';
+    background-color: rgb(8, 74, 173);
+    transition: 0.5s;
+}
+
+.booking-form{
+    padding: 0 20px 20px;
+}
+.booking-form label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(11, 188, 241);
+}
+.input-grp{
+    width: 151px;
+    display: inline-block;
+}
+.form-control{
+    font-size: 18px;
+    border-radius: 0;
+    color: aqua;
+    background: transparent;
+    box-shadow: none;
+}
